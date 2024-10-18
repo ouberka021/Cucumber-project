@@ -16,7 +16,6 @@ public class Bing_StepDefinitions {
     public void user_is_on_the_bing_search_page() {
 
         Driver.getDriver().get("https://www.bing.com");
-
     }
     @When("user enters orange in the Bing search box")
     public void user_enters_orange_in_the_bing_search_box() {
