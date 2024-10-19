@@ -10,13 +10,13 @@ Feature:Users should be able to login
     When user enters the driver information
     Then user should be able to login
 
-
+  @loginSalesManager
   Scenario: Login as sales manager
     Given user is on the login page
     When user enters the sales manager information
     Then user should be able to login
 
-
+  @loginStoreManager
   Scenario: Login as store manager
     Given user is on the login page
     When user enters the store manager information

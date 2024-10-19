@@ -24,6 +24,31 @@ public class VytrackLoginPageSteps {
                         ConfigurationReader.getProperty("driver_password"));
 
     }
+
+    @When("user enters the sales manager information")
+    public void user_enters_the_sales_manager_information() {
+
+        VytrackLoginPage vytrackLoginPage=new VytrackLoginPage();
+        vytrackLoginPage.
+                login(ConfigurationReader.getProperty("sales_manager_username"),
+                        ConfigurationReader.getProperty("sales_manager_password"));
+
+
+    }
+
+    @When("user enters the store manager information")
+    public void user_enters_the_store_manager_information() {
+
+        VytrackLoginPage vytrackLoginPage=new VytrackLoginPage();
+        vytrackLoginPage.
+                login(ConfigurationReader.getProperty("store_manager_username"),
+                        ConfigurationReader.getProperty("store_manager_password"));
+
+
+    }
+
+
+
     @Then("user should be able to login")
     public void user_should_be_able_to_login() {
 

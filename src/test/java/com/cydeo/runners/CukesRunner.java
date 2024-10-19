@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@loginDriver",
+        tags = "@loginStoreManager",
         publish = true //generating a report with public link
 )
 public class CukesRunner {}
