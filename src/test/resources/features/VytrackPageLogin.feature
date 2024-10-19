@@ -21,3 +21,10 @@ Feature:Users should be able to login
     Given user is on the login page
     When user enters the store manager information
     Then user should be able to login
+
+
+  @loginUserType
+  Scenario: Login as different user type
+    Given user is on the login page
+    When user enters the "driver" information
+    Then user should be able to login

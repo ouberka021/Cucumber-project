@@ -47,6 +47,11 @@ public class VytrackLoginPageSteps {
 
     }
 
+    @When("user enters the {string} information")
+    public void user_enters_the_information(String userType) {
+      VytrackLoginPage vytrackLoginPage=new VytrackLoginPage();
+      vytrackLoginPage.login(userType.replace(" ","_"));
+    }
 
 
     @Then("user should be able to login")
